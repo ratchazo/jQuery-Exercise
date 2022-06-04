@@ -1,42 +1,43 @@
 <html>
-    <head>
-        <!-- jquery -->
-        <script
-            src="https://code.jquery.com/jquery-3.6.0.js"
-            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-            crossorigin="anonymous">
+
+<head>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
         </script>
-        <!-- single click button -->
-        <script>
-            $(document).ready(function(){
-              $("p1").click(function(){
-                $(this).hide();
-              });
-             });
-        </script>
-        <!-- double click button -->
-        <script>
-            $(document).ready(function(){
-              $("p2").dblclick(function(){
-                $(this).hide();
-              });
-            });
-        </script>
-        <!-- mouse enter surprise -->
-        <script>
-            $(document).ready(function(){
-              $("p3").mouseenter(function(){
+    <!-- mouse enter surprise -->
+    <script>
+        $(document).ready(function () {
+            $("#surprise").mouseenter(function () {
                 alert("Surprise!");
-              });
             });
-        </script>
-    </head>
-    <body>
-        <h2 >jQuery Exercise</h2>
-        <p1> single click to hide me</p1>
-        <p2> double click to hide me</p2>
-        <p3> hover mouse over this message for a surprise</p3>
-    </body>
+        });
+    </script>
+    <!-- single click button -->
+    <script>
+        $(document).ready(function () {
+            $("#single").click(function () {
+                $(this).hide();
+            });
+        });
+    </script>
+    <!-- double click button -->
+    <script>
+        $(document).ready(function () {
+            $("#dbl").dblclick(function () {
+                $(this).hide();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h2>jQuery Exercise</h2>
+    <p id = "surprise">hover mouse over this message for a surprise</p>
+    <p id = "single">single click to hide me</p>
+    <p id = "dbl">double click to hide me</p>
+</body>
+
 </html>
 
 <!-- #id selects only 1, class selects multiple  -->
