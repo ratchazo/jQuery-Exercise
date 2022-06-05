@@ -1,18 +1,8 @@
-// mouse enter surprise
 $(document).ready(function () {
-    $("#surprise").mouseenter(function () {
-        alert("Surprise!");
+    $("button1").click(function () {
+        $("p").hide(1000);
+    });
+    $("button2").click(function () {
+        $("p").show(1000);
     });
 });
-// single click button
-    $(document).ready(function () {
-        $("#single").click(function () {
-            $(this).hide();
-        });
-    });
-// double click button
-    $(document).ready(function () {
-        $("#dbl").dblclick(function () {
-            $(this).hide();
-        });
-    });
